@@ -1,0 +1,2 @@
+sphinx>=7.0
+sphinx-needs>=2.0
