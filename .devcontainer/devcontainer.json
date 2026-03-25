@@ -1,0 +1,23 @@
+{
+  "name": "LED vX - Sphinx Docs",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Sphinx Docs",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "lextudio.restructuredtext",
+        "trond-snekvik.simple-rst"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  }
+}
