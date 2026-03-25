@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SPI Driver Component &#8212; LED Stripe Controller 0.1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/modern.css?v=803738c0" />
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=01f34227"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
+    <script src="../_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
+    <script src="../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
+    <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
+    <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LED Controller Component" href="led_controller.html" />
+    <link rel="prev" title="Interfaces" href="../architecture/interfaces.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="spi-driver-component">
+<h1>SPI Driver Component<a class="headerlink" href="#spi-driver-component" title="Link to this heading">¶</a></h1>
+<div class="need_container docutils container" id="SNCB-84b6afa8">
+<table class="need needs_grid_simple needs_layout_clean needs_style_none needs_type_comp docutils align-default" id="COMP_SPI_DRV">
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">SPI Driver</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#COMP_SPI_DRV" title="COMP_SPI_DRV">COMP_SPI_DRV</a></span>  <span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">open</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">component</span><span class="needs_spacer">, </span><span class="needs_data">spi</span><span class="needs_spacer">, </span><span class="needs_data">cpp</span><span class="needs_spacer">, </span><span class="needs_data">realtime</span></span></span></div>
+<div class="line"><span class="needs_language"><span class="needs_label">language: </span><span class="needs_data">C++17</span></span></div>
+<div class="line"><span class="needs_layer"><span class="needs_label">layer: </span><span class="needs_data">realtime</span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">links outgoing: <span class="links"><span><a class="reference internal" href="../requirements/software_requirements.html#SPEC_SW_SPI_DRIVER" title="COMP_SPI_DRV">SPEC_SW_SPI_DRIVER</a>, <a class="reference internal" href="../requirements/software_requirements.html#SPEC_SW_SPI_CLK" title="COMP_SPI_DRV">SPEC_SW_SPI_CLK</a>, <a class="reference internal" href="../architecture/interfaces.html#IFACE_SPIDEV" title="COMP_SPI_DRV">IFACE_SPIDEV</a></span></span></div>
+<div class="line">links incoming: <span class="links"><span><a class="reference internal" href="led_controller.html#COMP_LED_CTRL_RT" title="COMP_SPI_DRV">COMP_LED_CTRL_RT</a></span></span></div>
+</span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>The SPI Driver component encapsulates all interaction with the Linux
+<code class="docutils literal notranslate"><span class="pre">spidev</span></code> interface.  It provides a simple synchronous <code class="docutils literal notranslate"><span class="pre">write</span></code> API to
+the Frame Assembler and hides all <code class="docutils literal notranslate"><span class="pre">ioctl</span></code> details.</p>
+<p><strong>Responsibilities</strong></p>
+<ul class="simple">
+<li><p>Open and configure <code class="docutils literal notranslate"><span class="pre">/dev/spidev&lt;bus&gt;.&lt;cs&gt;</span></code> at startup.</p></li>
+<li><p>Set SPI mode (mode 0), bits-per-word (8), and clock frequency.</p></li>
+<li><p>Provide a <code class="docutils literal notranslate"><span class="pre">write(const</span> <span class="pre">std::span&lt;const</span> <span class="pre">std::byte&gt;</span> <span class="pre">data)</span></code> method that
+blocks until the transfer is complete.</p></li>
+<li><p>Close the file descriptor on destruction (RAII).</p></li>
+</ul>
+<p><strong>File layout</strong> (proposed)</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>src/rt/
+  spi_driver.hpp   – public interface
+  spi_driver.cpp   – implementation using spidev ioctls
+</pre></div>
+</div>
+<p><strong>Public interface sketch</strong></p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">namespace</span><span class="w"> </span><span class="nn">led</span><span class="o">::</span><span class="nn">rt</span><span class="w"> </span><span class="p">{</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">SpiConfig</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">device</span><span class="p">;</span><span class="w">          </span><span class="c1">// e.g. &quot;/dev/spidev0.0&quot;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">speed_hz</span><span class="p">;</span><span class="w">      </span><span class="c1">// e.g. 8&#39;000&#39;000</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="w">  </span><span class="n">mode</span><span class="p">;</span><span class="w">          </span><span class="c1">// SPI mode (0–3)</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="w">  </span><span class="n">bits_per_word</span><span class="p">;</span><span class="w"> </span><span class="c1">// typically 8</span>
+<span class="p">};</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">SpiDriver</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">explicit</span><span class="w"> </span><span class="n">SpiDriver</span><span class="p">(</span><span class="n">SpiConfig</span><span class="w"> </span><span class="n">cfg</span><span class="p">);</span>
+<span class="w">    </span><span class="o">~</span><span class="n">SpiDriver</span><span class="p">();</span>
+
+<span class="w">    </span><span class="c1">// Non-copyable, movable</span>
+<span class="w">    </span><span class="n">SpiDriver</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">SpiDriver</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">delete</span><span class="p">;</span>
+<span class="w">    </span><span class="n">SpiDriver</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">SpiDriver</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">delete</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">/// Blocking full-duplex write. Returns after transfer completes.</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">write</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">span</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">byte</span><span class="o">&gt;</span><span class="w"> </span><span class="n">data</span><span class="p">);</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">fd_</span><span class="p">{</span><span class="mi">-1</span><span class="p">};</span>
+<span class="w">    </span><span class="n">SpiConfig</span><span class="w"> </span><span class="n">cfg_</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="p">}</span><span class="w"> </span><span class="c1">// namespace led::rt</span>
+</pre></div>
+</div>
+<p><strong>Error handling</strong></p>
+<p>All <code class="docutils literal notranslate"><span class="pre">ioctl</span></code> failures throw <code class="docutils literal notranslate"><span class="pre">std::system_error</span></code> with the relevant
+<code class="docutils literal notranslate"><span class="pre">errno</span></code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="needstable_wrapper docutils container" id="needtable-components/spi_driver-0">
+<table class="NEEDS_TABLE docutils align-default" id="needtable-components/spi_driver-0-table_node">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 50.0%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>Title</p></th>
+<th class="head"><p>Status</p></th>
+<th class="head"><p>Links</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="#COMP_SPI_DRV">COMP_SPI_DRV</a></p></td>
+<td class="needs_title"><p>SPI Driver</p></td>
+<td class="needs_status"><p>open</p></td>
+<td class="needs_links"><p><a class="reference internal" href="../requirements/software_requirements.html#SPEC_SW_SPI_DRIVER">SPEC_SW_SPI_DRIVER</a><em>; </em><a class="reference internal" href="../requirements/software_requirements.html#SPEC_SW_SPI_CLK">SPEC_SW_SPI_CLK</a><em>; </em><a class="reference internal" href="../architecture/interfaces.html#IFACE_SPIDEV">IFACE_SPIDEV</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">LED Stripe Controller</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Requirements</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../requirements/system_requirements.html">System Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirements/software_requirements.html">Software Requirements</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Architecture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/overview.html">Architecture Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/hardware.html">Hardware Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/software.html">Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/interfaces.html">Interfaces</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Components</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SPI Driver Component</a></li>
+<li class="toctree-l1"><a class="reference internal" href="led_controller.html">LED Controller Component</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python_api.html">Python API Component</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Traceability</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../traceability.html">Traceability Matrix</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../architecture/interfaces.html" title="previous chapter">Interfaces</a></li>
+      <li>Next: <a href="led_controller.html" title="next chapter">LED Controller Component</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, LED vX Project.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/components/spi_driver.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
